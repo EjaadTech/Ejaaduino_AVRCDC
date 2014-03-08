@@ -1,4 +1,24 @@
+This is the README file for Ejaaduino AVRCDC firmware.
 
+We have just edited the AVRCDC firmware to work on Ejaaduino, the edits are mentioned in the change log.
+
+the code is edited to reflect Ejaaduino v2.0
+
+those having Ejaaduino v1.0 (the first one) should use the mentioned HEX file..!
+Ejaaduino_AVRCDC\bin\firmware\AVRCDC_ejaaduinoV1.hex
+
+The HOW-TO for burning the firmware is simple,
+use the Ejaaduino App..!
+
+For any queries/suggestions/anything regarding Ejaaduino
+contact us at: ejaaduino@ejaad.com.pk
+or join in on FB at: http://facebook.com/groups/Ejaaduino
+Ejaad Tech (http://ejaad.com.pk)
+
+TODO: update schematic and add quick use guide
+Change the project to work with the MAKEFILE setup, without AVRStudio
+
+==========START OF AVRCDC ReadMe==========
 
                                     CDC-232
 

@@ -5,16 +5,16 @@
 ## General Flags
 PROJECT = cdcmega
 
-#MCU = atmega8
+MCU = atmega8
 #MCU = atmega16
-MCU = atmega48
+#MCU = atmega48
 #MCU = atmega88
 #MCU = atmega168
 #MCU = atmega328p
 
-CLK = 12000000UL
+#CLK = 12000000UL
 #CLK = 15000000UL
-#CLK = 16000000UL
+CLK = 16000000UL
 #CLK = 18000000UL
 #CLK = 20000000UL
 
@@ -32,7 +32,8 @@ COMMON = -mmcu=$(MCU) -DF_CPU=$(CLK)
 ## Compile options common for all C compilation units.
 CFLAGS = $(COMMON)
 CFLAGS += -Wall -gdwarf-2 -Os -fsigned-char
-CFLAGS += -MD -MP -MT $(*F).o -MF dep/$(@F).d 
+CFLAGS += -MD -MP -MT $(*F).o
+# -MF dep/$(@F).d 	//ZP
 
 ## Assembly specific flags
 ASMFLAGS = $(COMMON)
